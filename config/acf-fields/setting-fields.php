@@ -77,6 +77,7 @@ $general
         ->addText('blog_page_title')
         ->addTextarea('blog_page_intro')
         ->addImage('blog_page_header_image')
+        ->addImage('blog_page_content_image')
         ->addTrueFalse('show_newsletter_subscription_form')
         ->addWysiwyg('waiting_page_content')
         ->addTextarea('blog_bio_texte')

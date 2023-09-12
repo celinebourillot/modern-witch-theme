@@ -61,7 +61,7 @@
     }
 
     h1 {
-      color: $white;
+      color: $primary;
 
       @include mq($until: mb) {
         font-size: $s3-text;

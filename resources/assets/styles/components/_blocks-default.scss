@@ -128,12 +128,12 @@
 
   h2,
   p {
-    color: white;
+    color: $primary;
   }
 
   .heading {
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid $primary;
     padding: 0.5rem;
 
     .link {
@@ -142,7 +142,7 @@
   }
 
   .collection-heading-border {
-    border: 1px solid white;
+    border: 1px solid $primary;
     padding: 2rem;
   }
 }

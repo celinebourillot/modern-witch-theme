@@ -11,7 +11,7 @@
       "./scripts/ajax-search.js"
     ]
   },
-  "publicPath": "/wp-content/themes/cosmos-wp",
+  "publicPath": "/wp-content/themes/modern-witch-theme",
   "devUrl": "http://modernwitch.local",
   "proxyUrl": "http://localhost:3001",
   "cacheBusting": "[name]_[hash:8]",

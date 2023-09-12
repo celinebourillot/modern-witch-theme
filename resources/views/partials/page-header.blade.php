@@ -9,16 +9,19 @@ if(is_home()):
   $title = get_field('blog_page_title','option');
   $intro = get_field('blog_page_intro','option');
   $newsletter = get_field('show_newsletter_subscription_form','option');
-  $image = get_field('blog_page_header_image','option');
+  $bg_image = get_field('blog_page_header_image','option');
+  $content_image = get_field('blog_page_content_image','option');
 else :
   $title = get_field('header_title');
   $intro = get_field('header_intro');
   $newsletter = get_field('show_newsletter_subscription_form');
-  $image = get_field('background_image');
+  $bg_image = get_field('background_image');
+  $content_image = get_field('content_image');
 endif;
 
+
 ?>
-<section class="hero hero--banner-block is-primary-dark">
+<section class="hero hero--banner-block {{ $bg_colour }}" style="background-image:url({{$bg_image['url']}}); background-repeat: no-repeat; background-size:cover">
   <div class="container">
     <div class="columns">
       <div class="column is-6">
@@ -58,8 +61,8 @@ endif;
           </div>
         </div>
         <div class="column is-6">
-        @if($image)
-          <img class="hero__image" src="{{ $image['url'] }}" alt="{{ $title }}"/>
+        @if($content_image)
+          <img class="hero__image" src="{{ $content_image['url'] }}" alt="{{ $title }}"/>
         @endif
         @if($video_id)
           <div class="vimeo-wrapper is-hidden-touch">

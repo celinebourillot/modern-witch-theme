@@ -30,6 +30,7 @@
         ->addText('header_title')
         ->addTextarea('header_intro')
         ->addImage('background_image')
+        ->addImage('content_image')
         ->addTrueFalse('show_newsletter_subscription_form')
         ->addRepeater('Buttons', [
             'min' => 0,

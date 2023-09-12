@@ -11,7 +11,7 @@ $bg_image = get_sub_field('background_image');
 <section class="section collection-block" style="background-image:url({{$bg_image['url']}}); background-repeat: no-repeat;">
   <div class="columns collection-container">
 
-    <div class="column is-4">
+    <div class="column is-6">
       <div class="heading">
         <div class="collection-heading-border">
 
