@@ -21,5 +21,6 @@
   
     </div>
 @endif
+@php(comments_template())
 
   

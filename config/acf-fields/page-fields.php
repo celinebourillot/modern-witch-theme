@@ -32,6 +32,7 @@
         ->addImage('background_image')
         ->addImage('content_image')
         ->addTrueFalse('show_newsletter_subscription_form')
+        ->addTrueFalse('hide_default_page_header')
         ->addRepeater('Buttons', [
             'min' => 0,
             'max' => 2,
