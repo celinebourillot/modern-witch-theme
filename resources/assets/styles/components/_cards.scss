@@ -1,0 +1,170 @@
+.card {
+  position: relative;
+  margin: 0 1rem 4rem;
+  border-radius: 5px;
+
+  @include mq($until: mobile) {
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .entry-summary {
+    padding: 1rem 0;
+  }
+
+  .btn {
+    display: block !important;
+    text-align: center;
+    padding: 17px 20px 13px !important;
+  }
+
+  &__meta {
+    font-size: $s6-text;
+    color: $primary-light;
+    padding-bottom: $baseline;
+  }
+
+  h3 {
+    min-height: 48px;
+    padding: 1rem 0;
+    text-align: center;
+
+    a {
+      color: $primary;
+      font-family: $title-font;
+    }
+  }
+
+  .date {
+    color: $primary;
+  }
+
+  time {
+    padding: 0 0.2rem;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+
+  &__container {
+    width: 100%;
+    position: relative;
+
+    @include mq($until: mobile) {
+      height: auto;
+    }
+
+    &__img-container {
+      position: relative;
+    }
+
+    h2 {
+      font-size: $s3-text !important;
+      text-align: left !important;
+    }
+
+    img {
+      margin: 0 auto 0.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+
+  p {
+    padding: 0;
+    color: $primary;
+  }
+}
+
+.card--product {
+  p {
+    padding: 0 0 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.card--category {
+  .image-rounded-top {
+    overflow: hidden;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 200px 200px 0 0;
+    position: relative;
+
+    img {
+      height: 400px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+    }
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+}
+
+.card--post {
+  margin: 0 0 2rem 0;
+  box-shadow: none;
+  padding: 2rem;
+  background: $cream;
+
+  .label {
+    margin: 0 1rem 1rem 0;
+  }
+
+  img {
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  h3 a {
+    color: $primary;
+    margin-top: 1rem;
+    font-family: $title-font;
+  }
+
+  p {
+    padding: $baseline 0;
+  }
+
+  .btn {
+    @include mq($from: mobile) {
+      width: 50%;
+    }
+  }
+}
+
+.card--testimonial {
+  background: $primary-light;
+  border-radius: 200px 200px 0 0;
+  border: 1px solid #8b4784;
+  padding: 7rem 2rem 2rem;
+  min-height: 90%;
+  text-align: center;
+  margin-top: 4rem;
+
+  .img-mini {
+    border-radius: 200px;
+    width: 100px;
+    margin: -9rem auto 5rem;
+  }
+
+  .card__container {
+    font-size: $baseline * 1.5;
+    color: white;
+  }
+
+  .card__name {
+    padding-top: $baseline * 2;
+    font-family: $title-font;
+  }
+}

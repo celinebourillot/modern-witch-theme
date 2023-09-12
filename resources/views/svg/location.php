@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.916" height="21.309" viewBox="0 0 14.916 21.309">
+  <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M14.958,3A7.453,7.453,0,0,0,7.5,10.458c0,5.594,7.458,13.851,7.458,13.851s7.458-8.257,7.458-13.851A7.453,7.453,0,0,0,14.958,3Zm0,10.122a2.664,2.664,0,1,1,2.664-2.664A2.665,2.665,0,0,1,14.958,13.122Z" transform="translate(-7.5 -3)" fill="currentColor"/>
+</svg>

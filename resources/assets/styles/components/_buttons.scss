@@ -1,0 +1,178 @@
+.btn,
+.button,
+.wp-block-button__link,
+.wpcf7-submit,
+input[type="submit"],
+.woocommerce a.button,
+.forminator-button {
+  transition: all 0.4s ease-in;
+  padding: 18px 20px 13px !important;
+  color: $white !important;
+  cursor: pointer;
+  font-family: $font;
+  display: inline-block;
+  font-size: $baseline;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  margin: 0;
+  outline: 0;
+  border-radius: 5px;
+
+  @include mq($until: mobile) {
+    padding: 18px 10px 13px !important;
+    font-size: 1rem !important;
+  }
+}
+
+#mc-embedded-subscribe {
+  margin: 0;
+}
+
+.woocommerce-page #payment #place_order,
+.woocommerce a.button {
+  padding: 22px 20px 13px !important;
+  font-size: 1.2rem !important;
+
+  @include mq($until: mobile) {
+    padding: 18px 10px 13px !important;
+  }
+}
+
+.woocommerce-page #payment #place_order {
+  margin-right: 2rem;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  font-weight: 500;
+}
+
+.btn--primary,
+.button,
+.wpcf7-submit,
+.woocommerce a.button,
+input[type="submit"],
+.forminator-button {
+  //background: $secondary !important;
+  color: $white;
+  text-shadow: none;
+  //transition: all 0.4s;
+  background: repeating-linear-gradient(
+    270deg,
+    rgba(28, 178, 131, 1),
+    rgba(42, 128, 104, 1),
+    rgba(28, 178, 131, 1)
+  ) !important;
+  background-size: 200%;
+  animation: buttonHover 10s infinite linear forwards;
+  //border: 3px solid $secondary-light !important;
+
+  &:hover {
+    background: $tertiary-light !important;
+    color: $text-color;
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn--secondary {
+  background: $tertiary !important;
+  color: $white !important;
+  text-shadow: none !important;
+  transition: 0.4s;
+  border: 3px solid $tertiary-light;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.link {
+  color: $tertiary-light;
+  text-transform: uppercase;
+  transition: 0.7s;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+
+  svg path {
+    fill: $tertiary-light;
+  }
+
+  svg {
+    width: 1rem;
+    margin-top: -5px;
+  }
+
+  span {
+    margin: 0 0.5rem;
+    display: inline-block;
+  }
+
+  &:hover {
+    color: $tertiary;
+
+    svg path {
+      fill: $tertiary;
+    }
+  }
+
+  &--white {
+    color: $white;
+    border-bottom: 1px solid $white;
+
+    &:hover {
+      color: $secondary;
+      border-bottom: 1px solid $secondary;
+    }
+  }
+}
+
+.btn--close {
+  top: 10px;
+  right: 10px;
+  color: $primary;
+  background: $white;
+  border-radius: 100px;
+  padding: 10px 12px 0;
+  position: absolute;
+  font-size: 2rem;
+  height: 60px;
+  width: 60px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+
+  @include mq($until: tablet) {
+    top: 80vh;
+    right: 50%;
+    margin-right: -30px;
+  }
+}
+
+#loadmore {
+  margin: 0 auto 4rem;
+  display: block;
+  width: 200px;
+  text-align: center;
+}

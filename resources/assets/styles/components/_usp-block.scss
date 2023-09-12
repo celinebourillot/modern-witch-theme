@@ -1,0 +1,58 @@
+.usp-block {
+  background-color: $cream;
+  width: 90%;
+  margin: 0 5% 5%;
+
+  h2,
+  .content {
+    margin-bottom: 3rem;
+  }
+}
+
+.usp {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+
+  @include mq($until: mobile) {
+    padding: 2rem 4rem;
+  }
+
+  img {
+    height: 7rem;
+    width: auto;
+    display: block;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto 1rem;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.circle {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 0;
+
+  @include mq($until: mobile) {
+    top: 1rem;
+    left: 2rem;
+  }
+}
+
+.circle--orange {
+  background-color: $tertiary;
+  display: none;
+}

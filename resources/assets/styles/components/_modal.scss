@@ -1,0 +1,53 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &__container {
+    background: $cream;
+    padding: $baseline*2;
+    position: absolute;
+    width: 70%;
+    top: 10%;
+    left: 15%;
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .woocommerce {
+      background: $primary;
+      color: $white;
+
+      h2,
+      label,
+      p {
+        color: $white;
+      }
+
+      .button {
+        width: 100%;
+        margin-top: $baseline;
+      }
+    }
+
+    @include mq($until: tablet) {
+      width: 100%;
+      left: 0;
+      top: 0;
+
+      .btn--close {
+        top: $baseline;
+        right: $baseline;
+        margin-right: 0;
+      }
+    }
+  }
+}

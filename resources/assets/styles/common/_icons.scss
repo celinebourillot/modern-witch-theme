@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?nybaz1");
+  src:
+    url("../fonts/icomoon.eot?nybaz1#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?nybaz1") format("truetype"),
+    url("../fonts/icomoon.woff?nybaz1") format("woff"),
+    url("../fonts/icomoon.svg?nybaz1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-font: "icomoon";
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $icon-font !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_f107::before {
+  content: "\e904";
+}
+
+.icon-icon_f107-up::before {
+  content: "\e905";
+}
+
+.icon-icon_f107-right::before {
+  content: "\e906";
+}
+
+.icon-icon_f107-left::before {
+  content: "\e907";
+}
+
+.icon-search-solid::before {
+  content: "\e900";
+}
+
+.icon-map-marker-alt-solid::before {
+  content: "\e901";
+}
+
+.icon-shopping-basket::before {
+  content: "\e902";
+}
+
+.icon-user-circle::before {
+  content: "\e903";
+}

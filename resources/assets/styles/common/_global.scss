@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  //overflow-x: hidden;
+}
+
+body {
+  font-size: $baseline;
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+  font-family: $font;
+  color: $secondary;
+}
+
+#main {
+  overflow: hidden;
+}
+
+.main {
+  margin-top: 83px;
+}
+
+.archive {
+  .normal-footer {
+    margin-top: $baseline * 3;
+  }
+}
+
+.content {
+  padding-bottom: $baseline;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.section,
+.after-product {
+  clear: both;
+
+  @include mq($until: mobile) {
+    //padding: 1rem 0 !important;
+  }
+}
+
+.body-lock {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.grecaptcha-badge {
+  opacity: 0;
+}
+
+.search-results {
+  form {
+    margin: $baseline * 2 auto 0;
+    justify-content: center;
+  }
+}
+
+.address,
+.date {
+  display: flex;
+  align-items: center;
+  padding-bottom: $baseline;
+
+  svg {
+    color: $primary;
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
+  }
+}
+
+// best seen at 1500px or less
+
+.wave-container {
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}

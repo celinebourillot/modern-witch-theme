@@ -1,0 +1,417 @@
+.logo-circle {
+  //background-color: #fff;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -5rem;
+  margin-top: -4rem;
+  border-radius: 1000px;
+}
+
+.newsletter-heart {
+  position: fixed;
+  bottom: 2rem;
+  right: 0.5rem;
+  z-index: 100;
+
+  svg {
+    animation: rotation 4s infinite linear;
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+
+    &:hover {
+      transition: ease-in 0.5s;
+      transform: scale(1.2);
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.navbar {
+  background: white;
+  min-height: 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  padding: 1rem 0.5rem;
+  transition: top 0.2s ease-in-out;
+
+  @include mq($from: mobile) {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    width: auto;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -3.5rem;
+
+    @include mq($until: mb) {
+      left: 0;
+      margin-left: 0;
+      top: -0.2rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+
+      @include mq($until: mb) {
+        margin-left: 1rem;
+      }
+    }
+
+    img {
+      width: 6rem;
+      margin: 0;
+    }
+
+    span {
+      color: $text-color;
+      font-family: $title-font;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__menu {
+    margin: 0;
+    padding-right: $baseline;
+
+    li {
+      display: inline;
+      color: $primary;
+
+      &::after {
+        content: "";
+      }
+
+      &:last-child::after {
+        content: "";
+      }
+    }
+
+    a {
+      @include font-text($size: $baseline, $colour: $primary, $weight: 100);
+
+      font-family: $font;
+      text-transform: uppercase;
+      font-weight: 500;
+      display: inline;
+      padding: 0 10px;
+    }
+  }
+
+  .columns {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+}
+
+//SCROLL CLASS
+
+.nav-up {
+  top: -4.5rem;
+
+  @include mq($until: mobile) {
+    top: -8.5rem;
+  }
+}
+
+//MOBILE NAV
+
+.mobile-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+
+  .icon-button span,
+  .icon-button a {
+    display: inline;
+    font-size: 30px;
+    padding: 0 $baseline * 2 0 0;
+    color: $white;
+  }
+
+  .cart-total {
+    right: 5rem;
+  }
+}
+
+.mobile-search {
+  padding: 1rem 0.5rem 0.5rem;
+}
+
+.navbar-burger {
+  background-color: $secondary;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-right: 0.5rem;
+  border-radius: $border-radius;
+
+  @include mq($from: mobile, $until: desktop) {
+    right: 200px;
+    top: 20px;
+  }
+
+  span {
+    background-color: $white;
+    display: block;
+    height: 2px;
+    width: 27px;
+    left: calc(50% - 10px);
+    margin: 2px 0;
+  }
+}
+
+.nav-mobile {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  overflow-x: hidden;
+
+  &--is-hidden {
+    display: none;
+  }
+
+  .footer__social a {
+    justify-content: center;
+  }
+
+  h4 {
+    color: white;
+  }
+
+  #menu-menu-2 {
+    margin: 0;
+    padding: $baseline * 2 0 0;
+  }
+
+  a {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    color: $tertiary;
+    font-family: $font;
+  }
+
+  ul {
+    li {
+      padding: 10px 10px;
+      list-style-type: none;
+
+      a {
+        color: $tertiary;
+        transition: all 0.4 ease-in;
+        text-align: center;
+        font-family: $font;
+        font-weight: 100;
+        margin: 0;
+        display: inline;
+      }
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    padding: 0;
+
+    a {
+      color: $secondary;
+      text-transform: none;
+      text-decoration: underline;
+    }
+  }
+
+  .menu-item-has-children {
+    &::before {
+      content: "\e904";
+      color: $secondary;
+      font-size: 14px;
+      font-family: "icomoon", sans-serif !important;
+      padding-right: 10px;
+    }
+  }
+}
+
+.dark-bg {
+  @include mq($until: mb) {
+    min-height: 6rem;
+  }
+}
+
+//ICOn NAV
+
+.icon-button {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  margin-right: 0.5rem;
+  padding: 1rem;
+
+  @include mq($until: mobile) {
+    padding: 1rem;
+    border-radius: $border-radius;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+  }
+
+  a,
+  span {
+    color: $tertiary-light;
+  }
+
+  a {
+    display: flex;
+
+    .btn-label {
+      margin-left: 0.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+
+  .cart-total {
+    background: $secondary-light;
+    padding: 0 3px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    color: $white;
+    font-family: $font;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .link,
+  .link span {
+    border-bottom: none;
+  }
+
+  .icon-shopping-basket::before,
+  .icon-user-circle::before {
+    color: $tertiary-light;
+    text-decoration: none;
+  }
+}
+
+.submenu {
+  position: absolute;
+  color: $secondary;
+  //background: $white;
+  //top: 4rem;
+  right: 0;
+  width: 20rem;
+  z-index: 90;
+  display: none;
+  padding: 1.6rem 0;
+
+  li {
+    list-style-type: none;
+    background: $cream;
+    padding: $baseline;
+    width: 100%;
+
+    span {
+      color: $primary;
+      padding: 0;
+      font-size: $baseline;
+    }
+
+    .btn {
+      padding: $baseline/2;
+      margin: $baseline auto 0;
+      text-align: center;
+      display: block;
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid $cream;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+  }
+
+  &--cart {
+    right: 0.2rem;
+  }
+}
+
+.icon-nav {
+  margin: 0 1rem;
+}
+
+.icon-nav li:hover ul {
+  display: block;
+}
+
+.icon-nav li:hover a {
+  /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+  color: $primary;
+}

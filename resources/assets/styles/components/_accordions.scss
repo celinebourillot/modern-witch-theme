@@ -1,0 +1,82 @@
+.accordion-block {
+  h3 {
+    color: $primary;
+    margin-bottom: $baseline*2;
+  }
+}
+
+.accordion__panel[aria-hidden="true"] {
+  display: none;
+}
+
+.accordion__header {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid $primary-light;
+  background: $white;
+  padding: 1rem;
+  cursor: pointer;
+
+  h4 {
+    flex-grow: 2;
+    text-align: left;
+    color: $text-color;
+    line-height: 2.2rem;
+    font-family: $font;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @include mq($until: mobile) {
+      font-size: $baseline;
+      line-height: $s4-lh;
+      padding: $baseline 0 !important;
+    }
+  }
+
+  .btn--accordion {
+    &::after {
+      content: "\e904";
+      font-family: "icomoon", Arial, sans-serif;
+      color: $secondary;
+      font-size: $s4-text;
+      margin-left: $baseline;
+      margin-top: 0.2rem;
+      display: block;
+
+      @include mq($until: mobile) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include mq($until: mobile) {
+    .d-flex {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.accordion__title {
+  display: none;
+}
+
+.accordion__panel[aria-hidden="false"] {
+  border-top: 3px solid $primary-light;
+  border-radius: 0;
+  margin-bottom: $baseline;
+  background: $white;
+  padding: $baseline;
+}
+
+.accordion__header[aria-expanded="true"] {
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+
+  .btn--accordion {
+    &::after {
+      content: "\e905";
+      font-family: "icomoon", Arial, sans-serif;
+    }
+  }
+}

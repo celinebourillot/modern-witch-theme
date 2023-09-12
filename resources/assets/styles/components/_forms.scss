@@ -1,0 +1,154 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+
+  ::-moz-placeholder {
+    @content;
+  }
+
+  :-moz-placeholder {
+    @content;
+  }
+
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+select,
+textarea,
+.ppom-wrapper .form-control {
+  background: $white;
+  color: $secondary;
+  border: 3px solid $primary-light !important;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0 !important;
+  border-radius: 0;
+  padding: 13px !important;
+  font-size: $baseline;
+}
+
+input[type="number"] {
+  padding: 14px 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+textarea {
+  height: 200px;
+}
+
+label {
+  margin: 0 $baseline 0.5rem 5px;
+  display: block;
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  margin-top: 2rem;
+  display: block;
+}
+
+legend {
+  margin: 2rem 0 1rem 5px;
+  display: block;
+  width: 100%;
+}
+
+//CUSTOM SELECT
+
+.custom-select,
+.value,
+.ppom-input-parfum,
+.ppom-input-design_de_l__tiquette {
+  position: relative;
+
+  &::after {
+    content: "\e904";
+    font-size: 14px;
+    font-family: "icomoon", sans-serif !important;
+    color: $secondary;
+    right: 10px;
+    top: 18px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.ppom-input-parfum,
+.ppom-input-design_de_l__tiquette {
+  &::after {
+    top: 60px;
+  }
+}
+
+.value {
+  &::after {
+    top: 10px;
+  }
+}
+
+select {
+  background: $white !important;
+  color: $primary !important;
+  border-radius: 2px !important;
+  border: 1px solid $primary-light !important;
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
+  appearance: none !important; /* remove default arrow */
+  font-size: $baseline !important;
+  padding: 14px !important;
+}
+
+select::-ms-expand {
+  display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+.ajax-search-form {
+  margin: 2rem 0;
+}
+
+// Newsletter form
+.form_newsletter {
+  width: 100% !important;
+
+  label {
+    display: none;
+  }
+
+  .forminator-button {
+    width: 100%;
+
+    @include mq($from: tablet) {
+      width: auto;
+      height: 49px;
+      border-radius: 0 $border-radius $border-radius 0 !important;
+      line-height: 1rem !important;
+      margin: 0 !important;
+      border: 3px solid $secondary-light;
+    }
+  }
+}
+
+.forminator-error-message {
+  font-weight: bold;
+  color: red;
+  padding-top: 0.5rem;
+  display: block;
+}
+
+// CONTACT FORMS

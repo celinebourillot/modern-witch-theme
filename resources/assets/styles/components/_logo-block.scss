@@ -1,0 +1,11 @@
+.logo-block {
+  img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: $baseline*5;
+    width: auto;
+    padding: auto;
+    align-items: center;
+  }
+}

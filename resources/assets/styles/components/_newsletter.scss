@@ -1,0 +1,66 @@
+.newsletter-block {
+  position: relative;
+  background: $cream;
+
+  @include mq($until: mobile) {
+    padding: $baseline*2;
+  }
+
+  h2,
+  p {
+    color: $primary;
+    padding-bottom: $baseline;
+  }
+
+  img {
+    border-radius: 20px;
+    padding: 2rem 0;
+  }
+}
+
+#mc_embed_signup {
+  input {
+    margin-bottom: 1rem !important;
+  }
+}
+
+.bio-block {
+  .text-content {
+    background: $secondary-light;
+    padding: 2rem;
+    border-radius: $border-radius;
+    position: relative;
+  }
+
+  .bio_text {
+    @include mq($from: tablet) {
+      padding-left: 5rem;
+    }
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    padding: 1rem 0;
+  }
+
+  img {
+    border-radius: 200px;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto 2rem;
+    display: block;
+
+    @include mq($from: tablet) {
+      position: absolute;
+      left: -5rem;
+      top: 6rem;
+    }
+  }
+}

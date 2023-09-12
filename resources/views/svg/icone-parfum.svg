@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="116" viewBox="0 0 81 116">
+  <g id="icone_parfum" data-name="icone parfum" transform="translate(-779 -3190)">
+    <path id="Tracé_1041" data-name="Tracé 1041" d="M40.5,0C62.868,0,81,16.565,81,37c0,13.364-6.987,31.326-18.876,38.4-5.885,3.5-13.885,0-21.624,0-8.164,0-14.505,4.2-21.12,0C8.571,68.546,0,49.976,0,37,0,16.565,18.132,0,40.5,0Z" transform="translate(779 3227)" fill="#582e7c"/>
+    <rect id="Rectangle_73" data-name="Rectangle 73" width="27" height="12" transform="translate(807 3221)" fill="#582e7c"/>
+    <rect id="Rectangle_74" data-name="Rectangle 74" width="56" height="5" transform="translate(791 3301)" fill="#582e7c"/>
+    <ellipse id="Ellipse_26" data-name="Ellipse 26" cx="15" cy="15.5" rx="15" ry="15.5" transform="translate(805 3190)" fill="#c6a6e2"/>
+    <path id="Tracé_1042" data-name="Tracé 1042" d="M0,0C9.088-9.4,14.709,11.4,14.709,11.4S18.969-7.423,30,0,14.709,34.053,14.709,34.053-9.088,9.4,0,0Z" transform="translate(805 3254)" fill="#e5cce0"/>
+  </g>
+</svg>

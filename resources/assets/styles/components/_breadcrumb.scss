@@ -1,0 +1,17 @@
+.rank-math-breadcrumb {
+  padding: 10px;
+
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  span,
+  a {
+    color: $text-color;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

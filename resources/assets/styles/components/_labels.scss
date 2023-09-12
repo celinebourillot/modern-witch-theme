@@ -1,0 +1,14 @@
+.label {
+  color: $primary;
+  background: $primary-light;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem 1rem;
+  font-family: $title-font;
+}
+
+.label--corner {
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}

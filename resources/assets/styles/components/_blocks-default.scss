@@ -1,0 +1,174 @@
+/* GENERAL */
+
+//archive page
+.category-desc {
+  padding: 1rem 1rem 0;
+  text-align: center;
+
+  p {
+    color: $primary;
+  }
+}
+
+.seo-content-category {
+  padding: 4rem 0 0;
+}
+
+//Content Blocks
+
+.content-block,
+.composition,
+.highlight-block,
+.composition-produit,
+.woocommerce-product-details__short-description,
+.seo-content-category,
+.category-desc {
+  .caption {
+    margin-top: $baseline;
+  }
+
+  p {
+    padding: 0.5rem 0;
+  }
+
+  ul {
+    margin: $baseline 0;
+    text-align: left;
+    color: $primary;
+    background-color: $cream;
+    padding: 2rem;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    list-style-type: none;
+    line-height: 25px;
+  }
+
+  li::before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    padding-left: 1px;
+    color: $white;
+    font-size: 13px;
+    content: "";
+    font-family: icomoon, sans-serif;
+    width: 10px;
+    height: 10px;
+    background: $tertiary-light;
+    border-radius: 0;
+    transform: rotate(45deg);
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-content {
+    img {
+      border-radius: 4px;
+      border: 5px solid $secondary-light;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.highlight-block ul li {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.collection-block {
+  position: relative;
+  background-size: cover;
+  padding: 3rem 1rem;
+  margin-top: 5px;
+
+  @include mq($until: desktop) {
+    background-position: 20%;
+
+    .columns {
+      align-items: center;
+    }
+
+    .product {
+      width: 45%;
+      flex-basis: auto;
+      display: flex;
+    }
+  }
+
+  @include mq($from: desktop) {
+    background-size: 100%;
+    min-height: 39rem;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+
+    .collection-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .product-1,
+    .product-3 {
+      margin-top: 20%;
+    }
+  }
+
+  .card--collection {
+    margin: 0;
+  }
+
+  h2,
+  p {
+    color: white;
+  }
+
+  .heading {
+    text-align: center;
+    border: 1px solid white;
+    padding: 0.5rem;
+
+    .link {
+      justify-content: center;
+    }
+  }
+
+  .collection-heading-border {
+    border: 1px solid white;
+    padding: 2rem;
+  }
+}
+
+.testimonials {
+  clear: both;
+  margin: 0 0 5%;
+}
+
+.testimonials .block-buttons {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.single-post {
+  .hero--post {
+    margin-bottom: 0;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+
+  .related-content {
+    padding: 1.5rem 1.5rem;
+    border-radius: 5px;
+    background-color: $cream;
+  }
+}

@@ -1,0 +1,191 @@
+.hero {
+  display: flex;
+  position: relative;
+  padding: 2rem 0;
+  margin-top: 83px;
+
+  .columns {
+    align-items: center;
+  }
+
+  .vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+
+    @include mq($from: desktop) {
+      height: 75vh;
+    }
+
+    @include mq($until: desktop) {
+      height: 70vh;
+    }
+  }
+
+  .vimeo-wrapper iframe {
+    //width: 100vw;
+    height: 59.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    //min-height: 100vh;
+    min-width: 177.77vw; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    @include mq($until: desktop) {
+      min-height: 500px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__body {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    @include mq($until: mobile) {
+      max-width: 100%;
+    }
+
+    @include mq($from: desktop) {
+      min-height: 75vh;
+    }
+
+    h1 {
+      color: $white;
+
+      @include mq($until: mb) {
+        font-size: $s3-text;
+        line-height: $s3-lh;
+        max-width: 100%;
+      }
+    }
+
+    &__intro {
+      margin: 2rem 0;
+      padding: 0;
+      //background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      color: $tertiary-light;
+      font-size: 25px;
+
+      @include mq($until: mb) {
+        font-size: $s4-text;
+        line-height: $s4-lh;
+        max-width: 100%;
+      }
+    }
+
+    &__testimonial {
+      background: $white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      border-radius: $radius;
+      padding: $baseline;
+      margin: 0 0 2rem;
+      display: flex;
+
+      img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 200px;
+        margin-right: 1rem;
+        overflow: visible;
+      }
+    }
+
+    .btn {
+      font-size: 16px;
+      margin-top: $baseline;
+
+      @include mq($until: tablet) {
+        max-width: 250px;
+      }
+
+      @include mq($until: mobile) {
+        max-width: auto;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__text {
+    padding: 0;
+    position: relative;
+    z-index: 2;
+
+    em {
+      color: white;
+    }
+
+    @include mq($from: tablet) {
+      padding: 2rem 2rem 2rem 0;
+    }
+  }
+
+  &--banner-block {
+    @include mq($until: tablet) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.woocommerce-page .hero--banner-block,
+.hero--post {
+  min-height: auto;
+  margin-top: 83px;
+  padding: 2rem 1rem;
+  margin-bottom: 5%;
+  text-align: center;
+  border-radius: 0;
+
+  h1 {
+    text-transform: none;
+    width: 45rem;
+    margin: 0 auto;
+    color: $primary;
+  }
+
+  img {
+    max-width: 45rem;
+    margin: 0 auto 1rem;
+    border-radius: 4px;
+  }
+
+  .hero__text {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .hero__body {
+    text-align: center;
+    min-height: auto;
+    display: block;
+
+    &__intro {
+      padding: 0;
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+
+  .date {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  time {
+    padding: 0 0.2rem;
+  }
+}

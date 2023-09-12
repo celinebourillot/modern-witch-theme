@@ -1,0 +1,30 @@
+.highlight-block {
+  margin: 0 5% 5%;
+
+  @include mq($until: mobile) {
+    padding: 3rem 0;
+  }
+
+  .columns {
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .highlight_text {
+    padding: 1rem;
+  }
+
+  .block-buttons {
+    margin: -5rem auto 0;
+    text-align: center;
+  }
+}

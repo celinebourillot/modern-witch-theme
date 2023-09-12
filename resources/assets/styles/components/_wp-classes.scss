@@ -1,0 +1,42 @@
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+/** Media alignment */
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: ($baseline) auto;
+  height: auto;
+}
+
+.alignleft,
+.alignright {
+  margin-bottom: ($baseline);
+  height: auto;
+}
+
+@include mq($until: mobile) {
+  .alignleft {
+    float: left;
+    margin-right: ($baseline);
+  }
+
+  .alignright {
+    float: right;
+    margin-left: ($baseline);
+  }
+}
+
+.woocommerce-checkout p.woocommerce-invalid-required-field span.error {
+  color: #e2401c;
+  display: block !important;
+  font-weight: bold;
+}
