@@ -32,6 +32,7 @@
         ->addImage('background_image')
         ->addImage('content_image')
         ->addTrueFalse('show_newsletter_subscription_form')
+        ->addText('newsletter_tag_id')
         ->addTrueFalse('hide_default_page_header')
         ->addRepeater('Buttons', [
             'min' => 0,
@@ -145,11 +146,10 @@
     $newsletterBlock = new StoutLogic\AcfBuilder\FieldsBuilder('newsletter_block');
     $newsletterBlock
         ->addFields($backgroundColor)
-        ->addTrueFalse('use_default_form')
         ->addText('title')
         ->addTextarea('intro')
         ->addImage('resource_image')
-        ->addText('group_id')
+        ->addText('newsletter_tag_id')
         ->addText('form_id');
     
     $accordion = new StoutLogic\AcfBuilder\FieldsBuilder('accordion_block');

@@ -4,6 +4,7 @@ $buttons = get_field('Buttons');
 $testimonialpicture = get_field('testimonial_picture');
 $bg_colour = get_field('background-colour');
 $video_id = get_field('video_id');
+$tag_id = get_field('newsletter_tag_id');
 
 if(is_home()):
   $title = get_field('blog_page_title','option');

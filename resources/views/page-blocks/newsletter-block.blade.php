@@ -3,6 +3,7 @@
     $newsletterIntro = get_sub_field('intro') ? get_sub_field('intro') : get_field('default_newsletter_intro','option');
     $image = get_sub_field('resource_image');
     $bg_colour = get_sub_field('background-colour');
+    $tag_id = get_sub_field('newsletter_tag_id');
 @endphp
 
 <div class="newsletter-block section {{$bg_colour}}">

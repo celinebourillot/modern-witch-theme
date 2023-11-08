@@ -1,5 +1,6 @@
 <?php 
 $form_id = get_field('default_form_id','option');
+var_dump($tag_id)
 ?>
 <div class="form_newsletter">
     <!--<?php echo do_shortcode('[forminator_form id='.$form_id.']'); ?>-->
@@ -13,6 +14,9 @@ $form_id = get_field('default_form_id','option');
                 <div class="mc-field-group">
                     <input type="email" placeholder="Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
+                @if($tag_id)
+                    <div hidden=""><input type="hidden" name="tags" value="{{$tag_id}}"></div>
+                @endif
                 <div id="mce-responses" class="clear">
                     <div class="response" id="mce-error-response" style="display:none"></div>
                     <div class="response" id="mce-success-response" style="display:none"></div>
