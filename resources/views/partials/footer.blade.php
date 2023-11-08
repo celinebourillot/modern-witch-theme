@@ -13,16 +13,6 @@
   $newsletterIntro = get_field('default_newsletter_intro','option');
     
 ?>
-
-<!--<div class="newsletter-block section">
-    <div class="text-content">
-        <h2>{{$newsletterTitle}}</h2>
-        <p>{{$newsletterIntro}}</p>
-        @include('partials.newsletter-form')
-
-
-    </div>
-</div>-->
     
     <footer class="footer">
             <div class="container">
