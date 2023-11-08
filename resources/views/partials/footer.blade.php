@@ -14,7 +14,7 @@
     
 ?>
 
-<div class="newsletter-block section">
+<!--<div class="newsletter-block section">
     <div class="text-content">
         <h2>{{$newsletterTitle}}</h2>
         <p>{{$newsletterIntro}}</p>
@@ -22,7 +22,7 @@
 
 
     </div>
-</div>
+</div>-->
     
     <footer class="footer">
             <div class="container">

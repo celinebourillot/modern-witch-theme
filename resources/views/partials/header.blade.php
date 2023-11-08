@@ -10,9 +10,9 @@ $youtube = get_field('youtube','option');
 $cartTotal = WC()->cart->get_cart_contents_count();
 @endphp
 <header class="header">
-  <div class="newsletter-heart is-hidden-touch">
+  <!--<div class="newsletter-heart is-hidden-touch">
     @include('svg.coeur')
-  </div>
+  </div>-->
   <nav class="navbar">
     <div class="container">
       <div class="columns is-gapless is-mobile">
