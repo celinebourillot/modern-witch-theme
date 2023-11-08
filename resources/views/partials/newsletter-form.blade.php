@@ -1,6 +1,5 @@
 <?php 
 $form_id = get_field('default_form_id','option');
-var_dump($tag_id)
 ?>
 <div class="form_newsletter">
     <!--<?php echo do_shortcode('[forminator_form id='.$form_id.']'); ?>-->

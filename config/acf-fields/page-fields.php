@@ -116,11 +116,12 @@
         ->addText('title')
         ->addRepeater('Logos', [
             'min' => 0,
-            'max' => 4,
+            'max' => 6,
             'button_label' => 'Add Logo',
             'layout' => 'block',
           ])
-            ->addImage('logo');
+            ->addImage('logo')
+            ->addUrl('link_logo');
 
     $testimonials = new StoutLogic\AcfBuilder\FieldsBuilder('testimonials_block');
     $testimonials
