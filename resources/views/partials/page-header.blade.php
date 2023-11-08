@@ -22,7 +22,7 @@ endif;
 
 
 ?>
-<section class="hero hero--banner-block {{ $bg_colour }}" style="background-image:url({{$bg_image['url']}}); background-repeat: no-repeat; background-size:cover">
+<section class="hero hero--banner-block {{ $bg_colour }}" @if($bg_image) style="background-image:url({{$bg_image['url']}}); background-repeat: no-repeat; background-size:cover @endif ">
   <div class="container">
     <div class="columns">
       <div class="column is-6">
