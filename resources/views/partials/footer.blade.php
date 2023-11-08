@@ -9,8 +9,6 @@
   $linkedin = get_field('linkedin','option');
   $youtube = get_field('youtube','option');
   $logo = get_field('logo_footer','option');
-  $newsletterTitle = get_field('default_newsletter_title','option');
-  $newsletterIntro = get_field('default_newsletter_intro','option');
     
 ?>
     
