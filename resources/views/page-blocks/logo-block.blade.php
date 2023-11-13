@@ -17,7 +17,7 @@ $logos = get_sub_field('Logos');
               @php
                 setup_postdata($logo);
                 $image = $logo['logo'];
-                $lonk = $logo['logo_link'];
+                $link = $logo['logo_link'];
               @endphp
 
               <div class="column normal-padding">
