@@ -80,6 +80,10 @@
         ->addText('highlight_title')
         ->addWysiwyg('highlight_text') 
         ->addImage('highlight_image')   
+        ->addSelect('image_side')
+        ->addChoice('left', 'gauche')
+        ->addChoice('right', 'droite')
+        ->setDefaultValue('left')
         ->addFields($button);
     
     $categoryBlock = new StoutLogic\AcfBuilder\FieldsBuilder('category_block');
